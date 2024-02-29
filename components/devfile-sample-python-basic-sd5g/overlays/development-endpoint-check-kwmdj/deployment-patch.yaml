@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-sd5g
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/jmicanek-tenant/devfile-sample-python-basic-1/devfile-sample-python-basic-sd5g@sha256:94b6d736a7d89e2929ff7a318a4c006bc25c9fb4ca5e71152b2b50e3c38f543b
+        name: my-python
+        resources: {}
+status: {}
